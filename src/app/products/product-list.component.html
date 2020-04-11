@@ -50,6 +50,9 @@
                             (ratingClicked)='onRatingClicked($event)'></pm-star>
                         </td>    
                     </tr>
+                    <tr *ngIf='!filteredProducts || filteredProducts.length == 0'>
+                        Keine Produkte mit diesem Filter gefunden.
+                    </tr>
                 </tbody>
             </div>
         </div>
