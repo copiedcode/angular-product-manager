@@ -48,7 +48,11 @@ set listFilter(value: string){
 
  constructor(){
    this.filteredProducts = this.products;
-   this.listFilter = 'cart';
+   this.listFilter = '';
+ }
+
+ onRatingClicked(message: string): void {
+   this.pageTitle = 'Produktliste -' + message;
  }
 
  performFilter(filterBy: string): IProduct[]{
