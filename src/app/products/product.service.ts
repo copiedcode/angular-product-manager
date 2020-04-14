@@ -28,7 +28,7 @@ export class ProductService {
             errorMessage = `Ein Fehler ist aufgetreten: ${err.error.message}`;
         } else {
             //backend return unsucessfull
-            errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
+            errorMessage = `Server hat geantwortet mit: ${err.status}, Fehlernachricht: ${err.message}`;
         }
         console.log(errorMessage);
         return throwError(errorMessage);
