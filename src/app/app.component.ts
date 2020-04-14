@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
     </ul>
   </nav>
   <div class='container'>
-    <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
   </div>
   `
 })
